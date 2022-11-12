@@ -1,0 +1,10 @@
+@mixin estilo_boton($bg_color, $color_letra, $ancho){
+    background-color: $bg_color ;
+    color: $color_letra ;
+    width: $ancho ;
+    height: 35px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+
+}
