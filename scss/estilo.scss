@@ -37,6 +37,11 @@
 .maincon{
     width: 100%;
     height: 1000px;
+    h2{
+        text-align: center;
+        color: $colo_secudario;
+        font-size: 50px;
+    }
     
 }
 .mainmv{
@@ -71,7 +76,7 @@ header{
 .divh{
     
     width: 100%;
-    height: 1000px;
+    height: 50%;
 }
 footer{
     background-color: rgba(22, 189, 189, 0.781);
@@ -97,6 +102,13 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    h2{
+        text-align: center;
+        color: $colo_principal;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
 
     }
   
@@ -133,9 +145,10 @@ footer{
     width: 100%;
     
 }
-
-#tab{
-    text-align: center;
+.tabla{
+     #tab{
+      text-align: center;
+   }
 }
 .mv{
     width: 100%;
@@ -156,6 +169,7 @@ footer{
                           "a9 a10";
                             
     justify-content: center;
+    align-content: space-between;
     #nom1{
         grid-area: a1;
         color: $colo_secudario;
@@ -164,6 +178,7 @@ footer{
     #nom2{
         grid-area: a2;
         color: $colo_secudario;
+        width: 60%;
     }
     #apl1{
         grid-area: a3;
@@ -173,6 +188,7 @@ footer{
     #apl2{
         grid-area: a4;
         color: $colo_secudario;
+        width: 60%;
         
     }
     #cel1{
@@ -183,6 +199,7 @@ footer{
     #cel2{
         grid-area: a6;
         color: $colo_secudario;
+        width: 60%;
         
     }
     #com{
@@ -206,7 +223,7 @@ footer{
     }
     #sen2{
         grid-area: a10;
-        @include estilo_boton( blue, white, 70%);  
+        @include estilo_boton( black, white, 70%);  
     }
 
     #sen2:hover{
@@ -380,6 +397,36 @@ footer{
     color: $colo_principal;
 }
 
+.gri-grupo{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "grupo1"
+                         "grupo2"
+                         "grupo3";
+    justify-content: center;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+    .img-grupo1{
+        grid-area: grupo1;
+        width: 65%;
+        height: 65%;
+    }
+    .img-grupo2{
+        grid-area: grupo2;
+        height: 65%;
+        width: 65%;
+    }
+    .img-grupo3{
+        grid-area: grupo3;
+        width: 65%;
+        height: 65%;
+
+    }
+}
+
 
 @media only screen and ( min-width: 754px) {
     .grillav{
@@ -427,6 +474,11 @@ footer{
         grid-template-areas: "titulo"
                              "imagen"
                              "texto";
+    }
+    .gri-grupo{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 400px;
+        grid-template-areas: "grupo1 grupo2 grupo3";
     }
     
 }
@@ -480,5 +532,6 @@ footer{
         width: 90%;
         height: 90%;
     }
+   
   
 }

@@ -1,11 +1,10 @@
 {
   "name": "pre-entrega-2-mathias-fleitas-main",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
@@ -13,5 +12,14 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasfleitas/Pre-entrega-3-Mathias-Fleitas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mathiasfleitas/Pre-entrega-3-Mathias-Fleitas/issues"
+  },
+  "homepage": "https://github.com/mathiasfleitas/Pre-entrega-3-Mathias-Fleitas#readme",
+  "description": ""
 }

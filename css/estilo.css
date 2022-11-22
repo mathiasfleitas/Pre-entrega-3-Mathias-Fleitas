@@ -31,6 +31,10 @@
 .maincon {
   width: 100%;
   height: 1000px; }
+  .maincon h2 {
+    text-align: center;
+    color: black;
+    font-size: 50px; }
 
 .mainmv {
   width: 100%;
@@ -57,7 +61,7 @@ header {
 
 .divh {
   width: 100%;
-  height: 1000px; }
+  height: 50%; }
 
 footer {
   background-color: rgba(22, 189, 189, 0.781);
@@ -80,6 +84,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  .maini h2 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .h2in {
   text-align: center;
@@ -110,7 +119,7 @@ footer {
   padding: 0px;
   width: 100%; }
 
-#tab {
+.tabla #tab {
   text-align: center; }
 
 .mv {
@@ -121,28 +130,32 @@ footer {
   grid-template-columns: 40% 40%;
   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 300px 70px;
   grid-template-areas: "a1 a1" "a2 a2" "a3 a3" "a4 a4" "a5 a5" "a6 a6" "a7 a7" "a8 a8" "a9 a10";
-  justify-content: center; }
+  justify-content: center;
+  align-content: space-between; }
   .grillac #nom1 {
     grid-area: a1;
     color: black;
     align-self: center; }
   .grillac #nom2 {
     grid-area: a2;
-    color: black; }
+    color: black;
+    width: 60%; }
   .grillac #apl1 {
     grid-area: a3;
     color: black;
     align-self: center; }
   .grillac #apl2 {
     grid-area: a4;
-    color: black; }
+    color: black;
+    width: 60%; }
   .grillac #cel1 {
     grid-area: a5;
     color: black;
     align-self: center; }
   .grillac #cel2 {
     grid-area: a6;
-    color: black; }
+    color: black;
+    width: 60%; }
   .grillac #com {
     grid-area: a7;
     color: black;
@@ -164,7 +177,7 @@ footer {
     color: black; }
   .grillac #sen2 {
     grid-area: a10;
-    background-color: blue;
+    background-color: black;
     color: white;
     width: 70%;
     height: 35px;
@@ -286,6 +299,28 @@ footer {
 #ac {
   color: white; }
 
+.gri-grupo {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "grupo1" "grupo2" "grupo3";
+  justify-content: center;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center; }
+  .gri-grupo .img-grupo1 {
+    grid-area: grupo1;
+    width: 65%;
+    height: 65%; }
+  .gri-grupo .img-grupo2 {
+    grid-area: grupo2;
+    height: 65%;
+    width: 65%; }
+  .gri-grupo .img-grupo3 {
+    grid-area: grupo3;
+    width: 65%;
+    height: 65%; }
+
 @media only screen and (min-width: 754px) {
   .grillav {
     grid-template-columns: 40% 40%;
@@ -310,7 +345,11 @@ footer {
   .grillaim1 {
     grid-template-columns: 90%;
     grid-template-rows: 100px 300px 300px;
-    grid-template-areas: "titulo" "imagen" "texto"; } }
+    grid-template-areas: "titulo" "imagen" "texto"; }
+  .gri-grupo {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+    grid-template-areas: "grupo1 grupo2 grupo3"; } }
 
 @media screen and (min-width: 992px) {
   .grillav {
